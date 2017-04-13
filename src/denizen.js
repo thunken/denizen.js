@@ -41,6 +41,7 @@ var Denizen;
         };
 
         /**
+         * Set location
          *
          * @returns {Denizen}
          */
@@ -103,6 +104,7 @@ var Denizen;
         };
 
         /**
+         * Get browser main language
          *
          * @returns {*}
          */
@@ -118,6 +120,7 @@ var Denizen;
         };
 
         /**
+         * Get browser language array
          *
          * @returns {*}
          */
