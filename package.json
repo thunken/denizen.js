@@ -1,6 +1,7 @@
 {
-  "name": "visitor.js",
-  "version": "0.1.0",
+  "name": "denizen.js",
+  "version": "1.0.0",
+  "license" : "SEE LICENSE IN LICENSE",
   "private": false,
   "devDependencies": {
 

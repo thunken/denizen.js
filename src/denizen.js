@@ -1,8 +1,8 @@
-var Visitor;
+var Denizen;
 
 (function() {
 
-    Visitor = function(options) {
+    Denizen = function(options) {
 
         if ((typeof options) === 'undefined') {
             options = {};
@@ -42,7 +42,7 @@ var Visitor;
 
         /**
          *
-         * @returns {Visitor}
+         * @returns {Denizen}
          */
         this.setLocation = function () {
             // As this function is called, we enforce the setLocation setting to true
@@ -167,7 +167,7 @@ var Visitor;
          * Set the location geolocation data in self.data.location attribute
          *
          * @param position
-         * @returns {Visitor}
+         * @returns {Denizen}
          */
         var setPosition = function (position) {
             // Triggering the beforeLocationSet callback
@@ -182,7 +182,7 @@ var Visitor;
          * Set the location geolocation data in self.data.location attribute
          *
          * @param error
-         * @returns {Visitor}
+         * @returns {Denizen}
          */
         var setPositionFailure = function (error) {
             // Triggering the beforeLocationSet callback
@@ -197,7 +197,7 @@ var Visitor;
         /**
          * Set the browser data in self.data attribute
          *
-         * @returns {Visitor}
+         * @returns {Denizen}
          */
         var setData = function () {
             objectRef.data = {
@@ -266,7 +266,7 @@ var Visitor;
             objectRef.settings.afterInitialized();
         };
 
-        // Visitor auto-initialize itself, no need to call it
+        // Denizen auto-initialize itself, no need to call it
         initialize(options);
 
     };
