@@ -1,5 +1,5 @@
-Denizen.js allows you to gather user browser data client side, all in pure Vanilla JS.  
-This library embeds an optional dependency on https://github.com/hgoebl/mobile-detect.js to handle mobile browsers information.
+Denizen.js allows you to gather user browser data client side, all in pure and lightweight JS.  
+This library only has an optional dependency on https://github.com/hgoebl/mobile-detect.js to handle mobile browsers information.
 
 # Installation
 ## Get library
