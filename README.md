@@ -4,7 +4,7 @@ This library embeds an optional dependency on https://github.com/hgoebl/mobile-d
 # Installation
 ## Get library
 ~~~
-git clone
+git clone https://github.com/thunken/visitor.js.git
 ~~~
 ## If you want to use mobile-detect.js
 Just download the library and add it to your pages, Visitor.js checks if MobileDetect object exist and take care of the rest.
