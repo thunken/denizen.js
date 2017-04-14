@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Denizen.js example</title>
+</head>
+<body>
+    <pre id="example"></pre>
+
+    <script type="application/javascript" src="../src/denizen.js"></script>
+    <script type="application/javascript">
+        var denizen = new Denizen({ afterLocationSet: function (data) {
+            var dataString = JSON.stringify(data, null, 2);
+            document.getElementById('example').textContent = dataString;
+        } });
+        denizen.setLocation();
+    </script>
+</body>
+</html>

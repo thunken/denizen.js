@@ -197,6 +197,21 @@ var Denizen;
             objectRef.settings.afterLocationSet(objectRef.data);
         };
 
+        var getPlugins = function () {
+            var plugins = [];
+            for (var el in navigator.plugins) {
+                if (navigator.plugins[el].name) {
+                    plugins[el] = {
+                        name: navigator.plugins[el].name,
+                        filename: navigator.plugins[el].filename,
+                        description: navigator.plugins[el].description
+                    }
+                }
+            }
+
+            return plugins;
+        };
+
         /**
          * Set the browser data in self.data attribute
          *
@@ -220,7 +235,7 @@ var Denizen;
                     options: {
                         cookiesEnabled: navigator.cookieEnabled
                     },
-                    plugins: navigator.plugins
+                    activePlugins: getPlugins()
                 },
                 platform: {
                     operatingSystem: navigator.platform,
@@ -274,4 +289,4 @@ var Denizen;
 
     };
 
-})( jQuery );
+})( );
