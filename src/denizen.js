@@ -176,7 +176,14 @@ var Denizen;
             // Triggering the beforeLocationSet callback
             objectRef.settings.beforeLocationSet(objectRef.data);
 
-            objectRef.data.location = position;
+            objectRef.data.location = {
+                coords: {
+                    accuracy: position.coords.accuracy,
+                    latitude: position.coords.latitude,
+                    longitude: position.coords.longitude
+                },
+                timestamp: position.timestamp
+            };
 
             setAddress(position);
         };
