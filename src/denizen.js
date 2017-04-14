@@ -252,6 +252,11 @@ var Denizen;
                         availableHeight: window.screen.availHeight,
                         availableWidth: window.screen.availWidth
                     }
+                },
+                session: {
+                    history: {
+                        referrer: document.referrer
+                    }
                 }
             };
 
