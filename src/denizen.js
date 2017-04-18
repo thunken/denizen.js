@@ -261,6 +261,7 @@ var Denizen;
                     }
                 },
                 session: {
+                    url: window.location.href,
                     history: {
                         referrer: document.referrer
                     }
